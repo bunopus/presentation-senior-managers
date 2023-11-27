@@ -160,6 +160,20 @@
       filter: blur(5px);
     }
 
+    .blurred {
+      filter: blur(1.5rem);
+    }
+
+    .fragment.blurred {
+      filter: blur(1.5rem);
+      visibility: visible;
+      opacity: 1;
+
+      &.visible {
+        filter: none;
+      }
+    }
+
     .greek {
       font-family: greek_font;
       text-transform: none;
@@ -173,6 +187,19 @@
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
     }
+
+
+  }
+
+  .rotated-stack {
+    img {
+      -webkit-box-shadow: 3px -4px 19px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px -4px 19px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 3px -4px 19px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    height: 700px;
+    position: relative;
   }
 
   .pause-overlay {
